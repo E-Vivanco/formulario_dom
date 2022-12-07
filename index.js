@@ -2,19 +2,20 @@
 let tarjeta = document.querySelector('#data-card')
 //console.log(tarjeta.children[0].children[0].children[0].children[0])
 let tar_v1 =tarjeta.children[0].children[0].children[0].children[0]
-console.log(tar_v1)
-let tar_v2 = tar_v1.querySelectorAll('input')
-tar_v2.forEach((input) =>{
-    let res = []
-    res.push(input.value)//replace("/\s+/",","))
-    console.log(res)//.style.background="grey"
-    //console.log(input.value)
-   // console.log("input",input)
-   // console.log("i",i)
+//console.log("aqui val tar_v1",tar_v1.value)
+tar_v1.addEventListener('click',function(){
+    cambia()
 })
-/*tar_v.addEventListener('click', function(evento){
-    evento.target.style.backgroundColor = "gray";
-})*/
+let tar_v2 =tarjeta.children[0].children[1].children[0].children[0]
+tar_v2.addEventListener('click',function(){
+    cambia()
+})
+//console.log("aqui val tar_v2",tar_v2.value)
+let tar_v3 =tarjeta.children[0].children[2].children[0].children[0]
+tar_v2.addEventListener('click',function(){
+    cambia()
+})
+
 
 //console.log(tar_v)
 //rescataremos todos los campos del usuario
