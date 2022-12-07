@@ -33,10 +33,13 @@ function cambia3(val){
     dir_3.style.background = "#F0808063"
     pago_1.style.background = "#F0808063"
 }
-
-
-
-
+const ytLink =document.getElementById('ytLink')
+const cb = document.getElementById('cb')
+ytLink.addEventListener('click',function(e){
+    if(!cb.checked){
+        e.preventDefault();
+    }
+})
 //rescataremos todos los campos del usuario
 let usuario = document.querySelector('#data-user')
 //console.log(usuario.children[0].children[0].children[0].children[0])
