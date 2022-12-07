@@ -1,9 +1,12 @@
 //rescataremos todos los campos de tarjeta
 let tarjeta = document.querySelector('#data-card')
-let tar_v = tarjeta.querySelectorAll('input')
-tar_v.forEach((input) =>{
-    let res = ""
-    res=input.value
+//console.log(tarjeta.children[0].children[0].children[0].children[0])
+let tar_v1 =tarjeta.children[0].children[0].children[0].children[0]
+console.log(tar_v1)
+let tar_v2 = tar_v1.querySelectorAll('input')
+tar_v2.forEach((input) =>{
+    let res = []
+    res.push(input.value)//replace("/\s+/",","))
     console.log(res)//.style.background="grey"
     //console.log(input.value)
    // console.log("input",input)
